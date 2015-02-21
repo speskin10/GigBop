@@ -8,9 +8,10 @@
 var Gig = function(gig_json){
     this.gid = gig_json.gid; //
     this.email = gig_json.email; // User email for login
-    this.password = ''; // TODO: Probably not keep this
     this.public_name = gig_json.public_name; // Name to be searched and displayed
     this.genres = gig_json.genres; // Array of Strings representing genres
+    this.zip = gig_json.zip; // String of 5 digits
+    this.radius = gig_json.radius; // In Miles
 };
 
 

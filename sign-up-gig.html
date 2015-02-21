@@ -22,37 +22,22 @@
     <script src="js/jquery.js"></script>
     <!-- Page Scripts -->
     <script src="js/classes/Gig.js"></script>
-    <script src="js/sign-up-bop.js"></script>
+    <script src="js/sign-up-gig.js"></script>
 </head>
 <body>
     <!-- Split button -->
-    <div class="btn-group">
-        <button type="button" class="btn btn-danger">Band</button>
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-            <li><a id='band1' href="#">Trap House</a></li>
-            <li><a id='band2' href="#">Liquid Pleasure</a></li>
-            <li><a id='band3' href="#">ICP</a></li>
-        </ul>
-    </div>
-    <div id="tempId">
-    </div>
     <div id="container">
         <form id="sign-up-form-customer">
-            <!--<div class="input-group">-->
-                <!--<span class="input-group-addon" id="basic-addon1">Cool Great</span>-->
-                <!--<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">-->
-            <!--</div>-->
             <div class="input-group">
-                <span>Name:</span>
-                <span id="name_label">Trap House Band</span>
+                <span class="input-group-addon" id="public_name">Profile Name</span>
+                <input type="text" class="form-control" placeholder="Trap House Band" aria-describedby="public_name">
             </div>
             <div class="input-group">
-                <span>Genres:</span>
-                <span id="genre_label">Funk, Rock, Cover</span>
+                <span class="input-group-addon" id="email">Email</span>
+                <input type="text" class="form-control" placeholder="chris@traphouse.com" aria-describedby="email">
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn btn-default">Sign Up</button>
             </div>
         </form>
     </div>
