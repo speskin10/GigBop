@@ -7,17 +7,17 @@ $(document).ready(function(){
     console.log('sign up bop');
 
     $('#band1').click(function(e){
-        setShownGig(Gig.makeTrapHouseBand());
+        setShownGig(Gig.makeTrapHouseBand('2'));
         e.preventDefault();
     });
     $('#band2').click(function(e){
         var liquidPleasure = Gig.makeLiquidPleasure('1');
-        liquidPleasure.myNameWow();
-        setShownGig();
+        setShownGig(liquidPleasure);
         e.preventDefault();
     });
     $('#band3').click(function(e){
-        setShownGig(Gig.makeICP());
+        setShownGig(Gig.makeICP('3'
+        ));
         e.preventDefault();
     });
 

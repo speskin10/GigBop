@@ -13,12 +13,10 @@ var Gig = function(gig_json){
     this.genres = gig_json.genres; // Array of Strings representing genres
 };
 
-Gig.prototype.myNameWow = function(){
-    console.log('wow '+this.public_name+' wow');
-};
+
 
 /*
-    Static Methods for generating test objects
+ ¡   Static Methods for generating test objects
  */
 
 Gig.makeTrapHouseBand = function(id){
@@ -36,7 +34,7 @@ Gig.makeLiquidPleasure = function(id){
 };
 
 Gig.makeICP = function(id){
-    return Gig({gid         :   id,
+    return new Gig({gid         :   id,
                 email       :   'magnets@snopes.com',
                 public_name :   'Insane Clown Posse',
                 genres      :   ['Trash']});
