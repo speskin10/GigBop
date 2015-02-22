@@ -1,42 +1,21 @@
 /**
- * This file represents the Gig class, the data model representing
- * GigBop users acting as entertainment entites.
+ * This file represents the Gig class, the data model representing a
+ * GigBop user's reqest for service. The information in a Gig object
+ * can be described as an event description or a contract between
+ * Gig and Bop. A gig object is created by the Bar Owner who needs a
+ * band, or a student who needs a tutor.
  *
  * Created by jjallen on 2/20/15.
  */
 
 var Gig = function(gig_json){
-    this.gid = gig_json.gid; //
-    this.email = gig_json.email; // User email for login
-    this.public_name = gig_json.public_name; // Name to be searched and displayed
-    this.genres = gig_json.genres; // Array of Strings representing genres
     this.zip = gig_json.zip; // String of 5 digits
-    this.radius = gig_json.radius; // In Miles
+    this.radius = gig_json.radius; // In some unit of distance. 0 for specific location
+    this.title = gig_json.title;
+    this.gig_description = gig_json.gig_description;
+    this.offer = gig_json.offer;
+    this.date = gig_json.date;
+    this.time = gig_json.time;
 };
 
 
-
-/*
- ¡   Static Methods for generating test objects
- */
-
-Gig.makeTrapHouseBand = function(id){
-    return new Gig({gid         :   id,
-                email       :   'chis@traphouseband.com',
-                public_name :   'Trap House Band',
-                genres      :   ['Funk', 'Rock', 'Cover']});
-};
-
-Gig.makeLiquidPleasure = function(id){
-    return new Gig({gid         :   id,
-                email       :   'soul@liquidpleasure.com',
-                public_name :   'Liquid Pleasure',
-                genres      :   ['Funk', 'Soul']});
-};
-
-Gig.makeICP = function(id){
-    return new Gig({gid         :   id,
-                email       :   'magnets@snopes.com',
-                public_name :   'Insane Clown Posse',
-                genres      :   ['Trash']});
-};
