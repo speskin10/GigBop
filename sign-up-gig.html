@@ -9,24 +9,38 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sign-up.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Page Scripts -->
+    <script src="js/classes/Gig.js"></script>
+    <script src="js/sign-up-gig.js"></script>
 </head>
 <body>
+    <!-- Split button -->
     <div id="container">
         <form id="sign-up-form-customer">
             <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">Cool Great</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                <span class="input-group-addon" id="public_name">Profile Name</span>
+                <input type="text" class="form-control" placeholder="Trap House Band" aria-describedby="public_name">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="email">Email</span>
+                <input type="text" class="form-control" placeholder="chris@traphouse.com" aria-describedby="email">
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn btn-default">Sign Up</button>
             </div>
         </form>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     </body>
